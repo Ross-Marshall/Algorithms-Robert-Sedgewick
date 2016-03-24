@@ -13,10 +13,13 @@ public class MoveNextToFront {
         Node n = m.getNext();
 
         System.out.println( "moveNextToFront : "  + n.getKey() );
+        System.out.println( "n.getNext() = " + n.getNext().getKey() );
+        System.out.println( "head.getNext() = " + head.getNext().getKey() );
+        System.out.println( "m.getNext() = " + m.getNext().getKey() );
 
         m.setNext( n.getNext() );
-        head.getNext().setNext( head.getNext() );
-        head.setNext( m );
+        n.setNext( head.getNext() );
+        head.setNext( n );
     }
 
     /**
