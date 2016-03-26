@@ -10,6 +10,7 @@ public class Exchange {
         System.out.println( "------------------------------------" );
         do { 
             System.out.println( "Node: " + ( counter++ ) + ". Key [ " + n.id + " ]" );
+            if ( counter == 30 ) { return; }
             n = n.next;
         } while ( n.id != tail.id ); 
     }
@@ -39,21 +40,35 @@ public class Exchange {
         tPrev = head;
         n     = head;
         uPrev = tail;
+        int tcounter = 0;
+        int tFinal = 0;
 
         do {      
-            if ( n.next.id == t.id ) tPrev = n;
-            if ( n.next.id == u.id ) uPrev = n;
+            if ( n.next.id == t.id ) { tPrev = n; tcounter++; tFinal = tcounter; }
+            if ( n.next.id == u.id ) { uPrev = n; tcounter++; }
             n = n.next;
         } while ( n.id != tail.id );
 
         n = head;
+         
+        if ( t == u.next || u == t.next ) {
 
-        tmp = t.next;
-        tPrev.next = u;
-        uPrev.next = t;
-        t.next = u.next;
-        u.next = tmp;
-
+            if ( tFinal == 2 ) {
+                u.next = t.next;
+                uPrev.next = t;
+                t.next = u;
+            } else {
+               tPrev.next = u;
+               t.next = u.next;
+               u.next = t;
+            }
+        }  else {
+            tmp = t.next;
+            tPrev.next = u;
+            uPrev.next = t;
+            t.next = u.next;
+            u.next = tmp;
+        }
     }
 
     public static void main( String [] args ) {
@@ -83,11 +98,33 @@ public class Exchange {
          ex.printList();
 
          t = ex.getNode( 3 );
-         u = ex.getNode( 5 );
+         u = ex.getNode( 4 );
          System.out.println( "------------------------------------" );
          System.out.println( "t id = " + t.id + " u id = " + u.id );
          ex.exchange( t, u );
          ex.printList();
+
+         t = ex.getNode( 0 );
+         u = ex.getNode( 25 );
+         System.out.println( "------------------------------------" );
+         System.out.println( "t id = " + t.id + " u id = " + u.id );
+         ex.exchange( t, u );
+         ex.printList();
+
+
+         t = ex.getNode( 13 );
+         u = ex.getNode( 5 );
+         System.out.println( "------------------------------------" );
+         System.out.println( "t id = " + t.id + " u id = " + u.id );
+         ex.exchange( t, u );
+         ex.printList(); 
+
+         t = ex.getNode( 17 );
+         u = ex.getNode( 16 );
+         System.out.println( "------------------------------------" );
+         System.out.println( "t id = " + t.id + " u id = " + u.id );
+         ex.exchange( t, u );
+         ex.printList(); 
 
 
     }
