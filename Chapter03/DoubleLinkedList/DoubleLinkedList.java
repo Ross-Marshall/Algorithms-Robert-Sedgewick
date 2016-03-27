@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class DoubleLinkedList {
 
@@ -17,6 +18,7 @@ public class DoubleLinkedList {
         Node n = head;
         int counter = 0;
 
+        System.out.println( " ============ Print Double Linked List =============" );
         while ( n != null ) {
 
           System.out.println( "Node[" + (counter++) + "] ==> " + n );
@@ -35,10 +37,8 @@ public class DoubleLinkedList {
          while ( m != null ) {
             if ( counter == pos ) {
                prev = m.prev;
-               next = m.next;
-System.out.println( "prev.id" + prev.id );
-System.out.println( "next.id" + next.id );
-               
+               next = m;
+              
                prev.next = n;
                n.prev = prev;
 
@@ -51,8 +51,30 @@ System.out.println( "next.id" + next.id );
             m = m.next;
              
          }
-    
-      
+    }
+
+
+    public void delete( int pos ) {
+
+         Node m = head;
+         int counter = 0;
+         Node prev;
+         Node next;
+
+         while ( m != null ) {
+            if ( counter == pos ) {
+               prev = m.prev;
+               next = m;
+              
+               prev.next = m.next;
+               m.prev = prev;
+
+               return;
+            }
+            counter++;
+            m = m.next;
+             
+         }
     }
 
     public void buildFirstHalf() {
@@ -64,9 +86,22 @@ System.out.println( "next.id" + next.id );
               n = new Node( pos );
               insert( n, pos );              
          }
-       
-
     }
+
+    public void buildSecondHalf() {
+         Random rand = new Random(93827); 
+         Node n;
+         int pos = 26;
+         int id;
+ 
+         while ( pos <= 50 ) {
+              id = rand.nextInt(499) + 125;  // Random number between 125 and 500.
+              n = new Node( id );
+              insert( n, pos ); 
+              pos++;             
+         }
+    }
+
 
     public static void main ( String [] args ) {
 
@@ -75,9 +110,19 @@ System.out.println( "next.id" + next.id );
         dl.printDoubleLinkedList();
 
         dl.buildFirstHalf();
+        dl.buildSecondHalf();
 
         dl.printDoubleLinkedList();
-        
+
+        dl.delete( 10 );
+        dl.delete( 20 );
+        dl.delete( 45 );
+
+        Node x = new Node( 1092 );
+        dl.insert( x, 17 );
+
+        dl.printDoubleLinkedList();
+    
     }
 
 }
