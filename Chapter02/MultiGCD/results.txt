@@ -1,0 +1,9 @@
+The Greatest Common Divisor of 343 and 2311 is 1
+The Greatest Common Divisor of 92 and 2344 is 4
+The Greatest Common Divisor of 461952 and 116298 is 18
+The Greatest Common Divisor of 98126316 and 921 is 3
+The Greatest Common Divisor of 98126316 and 924 is 12
+The Greatest Common Divisor of 98126316 and 930 is 6
+The Greatest Common Divisor of 98126316 and 933 is 3
+The Greatest Common Divisor of 98126316 and 936 is 36
+The Greatest Common Divisor of 98126316 and 846 is 18

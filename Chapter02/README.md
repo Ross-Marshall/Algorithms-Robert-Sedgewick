@@ -8,6 +8,8 @@ git commit -m "First commit"
 
 Push the changes in your local repository to GitHub.
 
+ 
+git pull
 git push origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 

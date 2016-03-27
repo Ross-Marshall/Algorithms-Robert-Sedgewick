@@ -1,0 +1,23 @@
+stackPointer = 0
+ch = 5
+stackPointer = 1
+ch = 9
+stackPointer = 2
+ch = 8
+stackPointer = 3
+ch = +
+stackPointer = 2
+ch = 4
+stackPointer = 3
+ch = 6
+stackPointer = 4
+ch = *
+stackPointer = 3
+ch = *
+stackPointer = 2
+ch = 7
+stackPointer = 3
+ch = +
+stackPointer = 2
+ch = *
+Result: 2075

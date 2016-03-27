@@ -1,0 +1,16 @@
+numerator   = 12
+denominator = 24
+gcd         = 12
+12/24 in lowest terms is: 1/2
+numerator   = 12
+denominator = 144
+gcd         = 12
+12/144 in lowest terms is: 1/12
+numerator   = 3
+denominator = 6
+gcd         = 3
+3/6 in lowest terms is: 1/2
+numerator   = 20
+denominator = 10000
+gcd         = 20
+20/10000 in lowest terms is: 1/500

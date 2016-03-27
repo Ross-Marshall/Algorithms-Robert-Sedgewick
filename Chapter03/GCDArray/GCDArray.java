@@ -20,6 +20,11 @@ public class GCDArray {
     }
 
     public static void main ( String [] args ) {
+ 
+        if ( args.length < 2 ) {
+           System.out.println( "Usage: java GCDArray <min int> <max int>" ); 
+           System.exit(1);
+        }
         
         int max_x = Integer.parseInt( args[0] );
         int max_y = Integer.parseInt( args[1] );

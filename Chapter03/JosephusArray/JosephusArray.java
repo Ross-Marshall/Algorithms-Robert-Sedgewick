@@ -50,6 +50,11 @@ public class JosephusArray {
     }
 
     public static void main ( String [] args ) {
+        if ( args.length < 2 ) {
+           System.out.println( "Usage: java JosephusArray <N Max people> <M Number of turns>" );
+           System.exit(1);
+        }
+
 
         JosephusArray c = new JosephusArray( Integer.parseInt( args[0] ), 
                                              Integer.parseInt( args[1] ) );

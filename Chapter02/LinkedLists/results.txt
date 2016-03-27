@@ -1,0 +1,45 @@
+t key = 1
+x key = 1
+t = 1
+t->next = 2
+t is now t->next : t = 2
+t = 2
+t->next = 3
+t is now t->next : t = 3
+t = 3
+t->next = 4
+t is now t->next : t = 4
+t = 4
+t->next = 5
+t is now t->next : t = 5
+t = 5
+t->next = 6
+t is now t->next : t = 6
+t = 6
+t->next = 7
+t is now t->next : t = 7
+t = 7
+t->next = 8
+t is now t->next : t = 8
+t = 8
+t->next = 9
+t is now t->next : t = 9
+x = 1
+ t = 9 t->next = 1
+5
+delete: 5
+1
+delete: 1
+7
+delete: 7
+4
+delete: 4
+3
+delete: 3
+6
+delete: 6
+9
+delete: 9
+2
+delete: 2
+Last man standing : 8

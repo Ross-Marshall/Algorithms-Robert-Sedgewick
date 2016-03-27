@@ -1,0 +1,15 @@
+Convert: Input [4]
+intValue = 4
+intValue + 1111 = 1115
+Convert: Input [5]
+intValue = 5
+intValue + 1111 = 1116
+Convert: Input [10]
+intValue = 10
+intValue + 1111 = 1121
+Convert: Input [25]
+intValue = 25
+intValue + 1111 = 1136
+Convert: Input [2147483647]
+intValue = 2147483647
+intValue + 1111 = -2147482538
