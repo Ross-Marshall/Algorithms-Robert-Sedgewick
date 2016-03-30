@@ -109,3 +109,18 @@ Total number of items = 2
 ----------- Print Queue ------------
 [ I ]-->NULL
 Total number of items = 1
+----------- Print Queue ------------
+[ T ]-->NULL
+Total number of items = 1
+----------- Print Queue ------------
+[ S ]-->[ T ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ I ]-->[ S ]-->[ T ]-->NULL
+Total number of items = 3
+----------- Print Queue ------------
+[ L ]-->[ I ]-->[ S ]-->[ T ]-->NULL
+Total number of items = 4
+----------- Print Queue ------------
+[ A ]-->[ L ]-->[ I ]-->[ S ]-->[ T ]-->NULL
+Total number of items = 5
