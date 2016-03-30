@@ -40,3 +40,72 @@
 0. value [50]
 1. value [20]
 2. value [10]
+----------- Print Queue ------------
+[ E ]-->NULL
+Total number of items = 1
+----------- Print Queue ------------
+[ A ]-->[ E ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ S ]-->[ A ]-->[ E ]-->NULL
+Total number of items = 3
+----------- Print Queue ------------
+[ A ]-->[ E ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ Y ]-->[ A ]-->[ E ]-->NULL
+Total number of items = 3
+----------- Print Queue ------------
+[ A ]-->[ E ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ E ]-->NULL
+Total number of items = 1
+----------- Print Queue ------------
+[ Q ]-->[ E ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ U ]-->[ Q ]-->[ E ]-->NULL
+Total number of items = 3
+----------- Print Queue ------------
+[ E ]-->[ U ]-->[ Q ]-->[ E ]-->NULL
+Total number of items = 4
+----------- Print Queue ------------
+[ U ]-->[ Q ]-->[ E ]-->NULL
+Total number of items = 3
+----------- Print Queue ------------
+[ Q ]-->[ E ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ E ]-->NULL
+Total number of items = 1
+----------- Print Queue ------------
+[ S ]-->[ E ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ T ]-->[ S ]-->[ E ]-->NULL
+Total number of items = 3
+----------- Print Queue ------------
+[ S ]-->[ E ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ E ]-->NULL
+Total number of items = 1
+----------- Print Queue ------------
+NULL
+Total number of items = 0
+----------- Print Queue ------------
+[ I ]-->NULL
+Total number of items = 1
+----------- Print Queue ------------
+[ O ]-->[ I ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ N ]-->[ O ]-->[ I ]-->NULL
+Total number of items = 3
+----------- Print Queue ------------
+[ O ]-->[ I ]-->NULL
+Total number of items = 2
+----------- Print Queue ------------
+[ I ]-->NULL
+Total number of items = 1
