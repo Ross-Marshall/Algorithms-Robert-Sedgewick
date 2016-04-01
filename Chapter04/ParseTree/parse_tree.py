@@ -4,6 +4,7 @@ import os
 import sys 
 
 from node import Node
+from stack import Stack
 
 def main(args):
     print "Parse Tree..."
@@ -17,12 +18,22 @@ def main(args):
     z.left  = z
     z.right = z
 
+    stack = Stack()
+    stack.print_stack()
+
     for token in tokens:
         print token 
         x = Node()
         x.value = token 
         x.left  = z 
         x.right = z
+
+        if token == '+' or token == '*':
+            x.right = stack.pop()
+            x.left  = stack.pop()
+        stack.push( x );
+
+    stack.print_stack()
 
 if __name__ == "__main__":
     main( sys.argv )
