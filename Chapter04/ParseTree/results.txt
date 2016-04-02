@@ -1,0 +1,39 @@
+Parse Tree...
+Arguments:[ A B C + D E * * F + * ]
+========= Printing Stack Start ============
+========== Printing Stack End ============
+A
+Pushing A to the stack
+B
+Pushing B to the stack
+C
+Pushing C to the stack
++
+Poping C from the stack and set to right link of +
+Poping B from the stack and set to left link of +
+Pushing + to the stack
+D
+Pushing D to the stack
+E
+Pushing E to the stack
+*
+Poping E from the stack and set to right link of *
+Poping D from the stack and set to left link of *
+Pushing * to the stack
+*
+Poping * from the stack and set to right link of *
+Poping + from the stack and set to left link of *
+Pushing * to the stack
+F
+Pushing F to the stack
++
+Poping F from the stack and set to right link of +
+Poping * from the stack and set to left link of +
+Pushing + to the stack
+*
+Poping + from the stack and set to right link of *
+Poping A from the stack and set to left link of *
+Pushing * to the stack
+========= Printing Stack Start ============
+print_stack = *
+========== Printing Stack End ============
