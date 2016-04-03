@@ -4,6 +4,15 @@ class Stack:
 
     stack = []
 
+    def empty(self):
+        print "len( self.stack ) = " + str( len( self.stack ) )
+        print "stack = " + str( self.stack )
+        self.print_stack()
+        if len( self.stack ) == 0:
+           return True
+        else:
+           return False
+
     def push( self, node ):
         self.stack.append( node )
 

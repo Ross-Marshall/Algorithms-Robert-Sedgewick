@@ -37,3 +37,113 @@ Pushing * to the stack
 ========= Printing Stack Start ============
 print_stack = *
 ========== Printing Stack End ============
+----------------- Added traverse() ---------------------------
+Parse Tree...
+Arguments:[ A B C + D E * * F + * ]
+========= Printing Stack Start ============
+========== Printing Stack End ============
+A
+Pushing A to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+========== Printing Stack End ============
+B
+Pushing B to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+print_stack = B
+========== Printing Stack End ============
+C
+Pushing C to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+print_stack = B
+print_stack = C
+========== Printing Stack End ============
++
+Poping C from the stack and set to right link of +
+Poping B from the stack and set to left link of +
+Pushing + to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+print_stack = +
+========== Printing Stack End ============
+D
+Pushing D to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+print_stack = +
+print_stack = D
+========== Printing Stack End ============
+E
+Pushing E to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+print_stack = +
+print_stack = D
+print_stack = E
+========== Printing Stack End ============
+*
+Poping E from the stack and set to right link of *
+Poping D from the stack and set to left link of *
+Pushing * to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+print_stack = +
+print_stack = *
+========== Printing Stack End ============
+*
+Poping * from the stack and set to right link of *
+Poping + from the stack and set to left link of *
+Pushing * to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+print_stack = *
+========== Printing Stack End ============
+F
+Pushing F to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+print_stack = *
+print_stack = F
+========== Printing Stack End ============
++
+Poping F from the stack and set to right link of +
+Poping * from the stack and set to left link of +
+Pushing + to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = A
+print_stack = +
+========== Printing Stack End ============
+*
+Poping + from the stack and set to right link of *
+Poping A from the stack and set to left link of *
+Pushing * to the stack
+stack after the push...
+========= Printing Stack Start ============
+print_stack = *
+========== Printing Stack End ============
+========= Printing Stack Start ============
+print_stack = *
+========== Printing Stack End ============
+Entering traverse...*
+Entering traverse...+
+Entering traverse...F
+Entering traverse...*
+Entering traverse...*
+Entering traverse...E
+Entering traverse...D
+Entering traverse...+
+Entering traverse...C
+Entering traverse...B
+Entering traverse...A
