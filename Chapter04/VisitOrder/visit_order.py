@@ -6,38 +6,43 @@ import sys
 from node import Node
 from stack import Stack
 
-def build(node, stack):
-    print "Node->value = " + str( node.value )
-    if stack.empty() != False:
-       node.left = stack.pop()
-       build(node.left)
-    if stack.empty() != False:
-       node.right = stack.pop()
-       build(node.right)
+class VisitOrder:
+  
+    stack = None 
 
-def main(args):
-    print args[1]
+    def __init__( self ):
+        self.stack = Stack()
+
+    def make_tree( self ):
+        while self.stack.length() > 0:
+            print "self.stack.length() ==> " + str( self.stack.length() )
+            print "Pop the stack ---> " + str( self.stack.pop().value )
+        #if self.stack.empty() != False:
+        #   node.left = stack.pop()
+        #   build(node.left)
+        #if self.stack.empty() != False:
+        #   node.right = stack.pop()
+        #   build(node.right)
+
+    #def main(args):
+   
+if __name__ == "__main__":
+    #print str( sys.argv[1] )
     print "Visit Order"
-    if ( len( args ) < 2 ):
+    vo = VisitOrder()
+    if ( len( sys.argv ) < 2 ):
         print "Usage ./visit_order.py 'List of comma separated arguments in string'"
         sys.exit(-1)
-
-    print "Arguments:[ " + args[1] + " ]"
-    tokens = args[1].split(',')
-
-    stack = Stack()
+    print "Arguments:[ " + sys.argv[1] + " ]"
+    tokens = sys.argv[1].split(',')
 
     for token in tokens:
         print token
         node = Node()
         node.value = token
-        stack.push( node ) 
+        vo.stack.push( node ) 
 
-    stack.print_stack()
+    vo.stack.print_stack()
 
-    while ( stack.empty() == False ):
-        t = stack.pop()
-        build( t, stack )
-        
-if __name__ == "__main__":
-    main( sys.argv )
+    vo.make_tree ()
+
