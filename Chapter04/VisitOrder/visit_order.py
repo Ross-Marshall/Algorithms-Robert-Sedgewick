@@ -17,7 +17,7 @@ class VisitOrder:
     def make_stack( self ):
         while self.stack.length() > 0:
             print "self.stack.length() ==> " + str( self.stack.length() )
-            #print "Pop the stack ---> " + str( self.stack.pop().value )
+            print "Pop the stack ---> " + str( self.stack.pop().value )
 
 
     def build_tree( self, node ):
@@ -49,8 +49,8 @@ if __name__ == "__main__":
 
     vo.stack.print_stack()
 
-    #vo.make_stack ()
+    vo.make_stack ()
 
-    vo.build_tree( vo.stack.pop() )
+    #vo.build_tree( vo.stack.pop() )
 
 

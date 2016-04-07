@@ -1,0 +1,221 @@
+Visit Order
+Arguments:[ E,O, ,A,,,C,,,P,M,,,L,,,T,E,T,,, ,,,E,R,,,E,, ]
+E
+O
+ 
+A
+
+
+C
+
+
+P
+M
+
+
+L
+
+
+T
+E
+T
+
+
+ 
+
+
+E
+R
+
+
+E
+
+
+========= Printing Stack Start ============
+print_stack = E
+print_stack = O
+print_stack =  
+print_stack = A
+print_stack = 
+print_stack = 
+print_stack = C
+print_stack = 
+print_stack = 
+print_stack = P
+print_stack = M
+print_stack = 
+print_stack = 
+print_stack = L
+print_stack = 
+print_stack = 
+print_stack = T
+print_stack = E
+print_stack = T
+print_stack = 
+print_stack = 
+print_stack =  
+print_stack = 
+print_stack = 
+print_stack = E
+print_stack = R
+print_stack = 
+print_stack = 
+print_stack = E
+print_stack = 
+print_stack = 
+========== Printing Stack End ============
+self.stack.length() ==> 31
+len( self.stack ): 31
+length of stack ===>31
+pop length of [E] = 1
+Pop the stack ---> E
+self.stack.length() ==> 30
+len( self.stack ): 30
+length of stack ===>30
+pop length of [O] = 1
+Pop the stack ---> O
+self.stack.length() ==> 29
+len( self.stack ): 29
+length of stack ===>29
+pop length of [ ] = 1
+Pop the stack --->  
+self.stack.length() ==> 28
+len( self.stack ): 28
+length of stack ===>28
+pop length of [A] = 1
+Pop the stack ---> A
+self.stack.length() ==> 27
+len( self.stack ): 27
+length of stack ===>27
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 26
+len( self.stack ): 26
+length of stack ===>26
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 25
+len( self.stack ): 25
+length of stack ===>25
+pop length of [C] = 1
+Pop the stack ---> C
+self.stack.length() ==> 24
+len( self.stack ): 24
+length of stack ===>24
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 23
+len( self.stack ): 23
+length of stack ===>23
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 22
+len( self.stack ): 22
+length of stack ===>22
+pop length of [P] = 1
+Pop the stack ---> P
+self.stack.length() ==> 21
+len( self.stack ): 21
+length of stack ===>21
+pop length of [M] = 1
+Pop the stack ---> M
+self.stack.length() ==> 20
+len( self.stack ): 20
+length of stack ===>20
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 19
+len( self.stack ): 19
+length of stack ===>19
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 18
+len( self.stack ): 18
+length of stack ===>18
+pop length of [L] = 1
+Pop the stack ---> L
+self.stack.length() ==> 17
+len( self.stack ): 17
+length of stack ===>17
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 16
+len( self.stack ): 16
+length of stack ===>16
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 15
+len( self.stack ): 15
+length of stack ===>15
+pop length of [T] = 1
+Pop the stack ---> T
+self.stack.length() ==> 14
+len( self.stack ): 14
+length of stack ===>14
+pop length of [E] = 1
+Pop the stack ---> E
+self.stack.length() ==> 13
+len( self.stack ): 13
+length of stack ===>13
+pop length of [T] = 1
+Pop the stack ---> T
+self.stack.length() ==> 12
+len( self.stack ): 12
+length of stack ===>12
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 11
+len( self.stack ): 11
+length of stack ===>11
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 10
+len( self.stack ): 10
+length of stack ===>10
+pop length of [ ] = 1
+Pop the stack --->  
+self.stack.length() ==> 9
+len( self.stack ): 9
+length of stack ===>9
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 8
+len( self.stack ): 8
+length of stack ===>8
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 7
+len( self.stack ): 7
+length of stack ===>7
+pop length of [E] = 1
+Pop the stack ---> E
+self.stack.length() ==> 6
+len( self.stack ): 6
+length of stack ===>6
+pop length of [R] = 1
+Pop the stack ---> R
+self.stack.length() ==> 5
+len( self.stack ): 5
+length of stack ===>5
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 4
+len( self.stack ): 4
+length of stack ===>4
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 3
+len( self.stack ): 3
+length of stack ===>3
+pop length of [E] = 1
+Pop the stack ---> E
+self.stack.length() ==> 2
+len( self.stack ): 2
+length of stack ===>2
+pop length of [] = 0
+Pop the stack ---> 
+self.stack.length() ==> 1
+len( self.stack ): 1
+length of stack ===>1
+pop length of [] = 0
+Pop the stack ---> 
