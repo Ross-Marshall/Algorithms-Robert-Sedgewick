@@ -39,12 +39,18 @@ if __name__ == "__main__":
         print "Usage ./visit_order.py 'List of comma separated arguments in string'"
         sys.exit(-1)
     print "Arguments:[ " + sys.argv[1] + " ]"
-    tokens = sys.argv[1].split(',')
+    tokens = sys.argv[1].split('|')
 
     for token in tokens:
         print token
+        members = token.split(',')
         node = Node()
-        node.value = token
+        node.id = members[1]
+        node.parent_id = members[2]
+        node.value = members[0]
+        node.position = members[3]   # Relative to parent: L - Left, R - Right
+        node.left  = None
+        node.right = None
         vo.stack.push( node ) 
 
     vo.stack.print_stack()
