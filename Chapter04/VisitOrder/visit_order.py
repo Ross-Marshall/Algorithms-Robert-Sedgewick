@@ -44,13 +44,8 @@ if __name__ == "__main__":
     for token in tokens:
         print token
         members = token.split(',')
-        node = Node()
-        node.id = members[1]
-        node.parent_id = members[2]
-        node.value = members[0]
-        node.position = members[3]   # Relative to parent: L - Left, R - Right
-        node.left  = None
-        node.right = None
+        # value, id, parent, position relative to parent: L - Left, R - Right
+        node = Node(members[0], members[1], members[2], members[3] )
         vo.stack.push( node ) 
 
     vo.stack.print_stack()
