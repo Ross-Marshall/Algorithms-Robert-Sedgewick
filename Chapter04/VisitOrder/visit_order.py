@@ -33,6 +33,7 @@ class VisitOrder:
   
 if __name__ == "__main__":
     #print str( sys.argv[1] )
+    node_list = []
     print "Visit Order"
     vo = VisitOrder()
     if ( len( sys.argv ) < 2 ):
@@ -46,12 +47,17 @@ if __name__ == "__main__":
         members = token.split(',')
         # value, id, parent, position relative to parent: L - Left, R - Right
         node = Node(members[0], members[1], members[2], members[3] )
-        vo.stack.push( node ) 
+        node_list.append( node )
 
-    vo.stack.print_stack()
+    print str( node_list )
+    #vo.make_stack ()
 
-    vo.make_stack ()
+    for n in node_list:
+        print n.value
 
+    for n in node_list:
+        if n.id == '102':
+            print n.value
     #vo.build_tree( vo.stack.pop() )
 
 
