@@ -19,6 +19,12 @@ class VisitOrder:
             print "self.stack.length() ==> " + str( self.stack.length() )
             print "Pop the stack ---> " + str( self.stack.pop().value )
 
+    def get_node( self, parent_id ):
+        for n in node_list:
+            #print 'get_node ' + str( n.parent_id )
+            if n.parent_id == parent_id:
+                return n
+        return None
 
     def build_tree( self, node ):
          self.level = self.level + 1
@@ -55,9 +61,11 @@ if __name__ == "__main__":
     for n in node_list:
         print n.value
 
-    for n in node_list:
-        if n.id == '102':
-            print n.value
+    print 'Node 101 : ' + str( vo.get_node( '101' ) )
+
+    print 'Node Unknown : ' + str( vo.get_node( '888' ) )
+
+ 
     #vo.build_tree( vo.stack.pop() )
 
 
