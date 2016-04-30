@@ -9,3 +9,6 @@ class Node:
         self.position = position   # Relative to parent: L - Left, R - Right
         self.left  = None
         self.right = None
+
+    def print_node( self ):
+         return '[' + str(self) + ',' + self.id + ',' + self.parent_id + ',' + self.value + ',' + self.position + ',' + str( self.left ) + ',' + str( self.right ) + ']'  

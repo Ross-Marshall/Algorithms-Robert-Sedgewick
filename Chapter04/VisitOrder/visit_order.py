@@ -11,6 +11,8 @@ class VisitOrder:
     stack = None 
     level = 0
 
+    node_list = []
+
     def __init__( self ):
         self.stack = Stack()
 
@@ -19,10 +21,10 @@ class VisitOrder:
             print "self.stack.length() ==> " + str( self.stack.length() )
             print "Pop the stack ---> " + str( self.stack.pop().value )
 
-    def get_node( self, parent_id ):
-        for n in node_list:
-            #print 'get_node ' + str( n.parent_id )
-            if n.parent_id == parent_id:
+    def get_node( self, node_id ):
+        for n in self.node_list:
+            #print 'get_node ' + str( n.id )
+            if n.id == node_id:
                 return n
         return None
 
@@ -39,7 +41,7 @@ class VisitOrder:
   
 if __name__ == "__main__":
     #print str( sys.argv[1] )
-    node_list = []
+    
     print "Visit Order"
     vo = VisitOrder()
     if ( len( sys.argv ) < 2 ):
@@ -53,17 +55,35 @@ if __name__ == "__main__":
         members = token.split(',')
         # value, id, parent, position relative to parent: L - Left, R - Right
         node = Node(members[0], members[1], members[2], members[3] )
-        node_list.append( node )
+        vo.node_list.append( node )
 
-    print str( node_list )
+    print str( vo.node_list )
     #vo.make_stack ()
 
-    for n in node_list:
-        print n.value
+    for n in vo.node_list:
+        parent_node = vo.get_node( n.parent_id )
+        print 'DEBUG node n ====> ' + n.id
+        if parent_node != None:
+            print 'DEBUG parent ====> ' + parent_node.id
+            print 'DEBUG n (parent) > ' + n.parent_id
+            print '====================================='
+            if n.position == 'L':
+                parent_node.left = n
+            elif n.position == 'R':
+                parent_node.right = n
+            elif n.position == 'T':
+                print n.id + ' parent is the root of the tree'
+                if n.position == 'L':
+                    parent_node.left = n
+                elif n.position == 'R':
+                    parent_node.right = n
+                else:
+                    print 'Node ' + n.id + ' has an invalid position: ' + str( n.position )
+            else:
+                print 'ERROR: ' + n.id + ' has an invalid position value [' + n.position + ']'
 
-    print 'Node 101 : ' + str( vo.get_node( '101' ) )
-
-    print 'Node Unknown : ' + str( vo.get_node( '888' ) )
+    for n in vo.node_list:
+        print n.print_node() 
 
  
     #vo.build_tree( vo.stack.pop() )
